@@ -1,0 +1,70 @@
+Clarisse Letícia da Silva Santos - ADS1 Turma A
+#Questão 01-Faça um programa que peça dois números inteiros e imprima a soma desses dois números
+
+número1= int(input("digite o primeiro número inteiro:"))
+número2= int(input("digite o segundo número inteiro:"))
+print ("a soma dos dois números foi", (número1 + número2))
+
+#Questão 02-Escreva um programa que leia um valor em metros e o exiba convertido em milímetros
+
+metro = int(input("digite o valor em metros:"))
+conversão = int(input("digite o valor de conversão em milimetros:"))
+print ( metro*conversão , "milimetros")
+
+#Questão 03-Escreva um programa que leia a quantidade de dias, horas, minutos e segundos do usuário. Calcule o total em segundos. 
+
+dias = int(input("digite o número de dias:"))
+horas= int(input("digite o número de horas:"))
+minutos = int(input("digite o número de minutos:"))
+segundos = int(input("digite o número de segundos:"))
+print(((((((dias*24)+horas)*60)+minutos)*60)+ segundos), "segundos")
+
+#Questão 04-Faça um programa que calcule o aumento de um salário. Ele deve solicitar o valor do salário e a porcentagem do aumento. Exiba o valor do aumento e do novo salário.
+
+salárioatual = int(input("digite o valor do salário:"))
+aumento = int(input("digite a porcentagem do aumento:"))
+print (" o valor do novo salário foi R$" , (salárioatual+(salárioatual*aumento/100)))
+print ("o valor do aumento foi de R$",((salárioatual+(salárioatual*aumento/100))-salárioatual))
+
+
+#Qustão 05-Solicite o preço de uma mercadoria e o percentual de desconto. Exiba o valor do desconto e o preço a pagar. 
+
+preçodamercadoria = int(input("digite o preço da mercadoria:"))
+desconto = int(input("digite o desconto:"))
+print (" o valor da compra foi R$" , (preçodamercadoria - (preçodamercadoria*desconto/100)))
+print (" o valor do desconto foi R$", ((preçodamercadoria - ((preçodamercadoria*desconto/100)))-preçodamercadoria))
+
+#Questão 06-Calcule o tempo de uma viagem de carro. Pergunte a distância a percorrer e a velocidade média esperada para a viagem.  
+
+velocidade = int(input("digite a velocidade média:"))
+distancia = int(input("digite a distancia:"))
+print ((distancia/velocidade), "horas de viagem")
+
+#Questão 07- Converta uma temperatura digitada em Celsius para Fahrenheit. F = 9*C/5 + 32 
+
+c = int(input("digite a temperatura em Celsius:"))
+print ((9*c/5+32), "°Fahrenheit")
+
+#Questão 08- Faça agora o contrário, de Fahrenheit para Celsius. 
+
+f = int(input("digite a temperatura em fahrenheit:"))
+print (((f-32)/(9/5)) , "°Celsius" )
+
+#Questão 09- Escreva um programa que pergunte a quantidade de km percorridos por um carro alugado pelo usuário, assim como a quantidade de dias pelos quais o carro foi alugado. Calcule o preço a pagar, sabendo que o carro custa R$ 60,00 por dia e R$ 0,15 por km rodado. 
+
+dias = int(input("digite a quantidade de dias:"))
+km = int(input("digite a quantidade de km percorrido:"))
+print ("preço a pagar é R$", ((dias*60)*(km*(15/100))))
+
+#Questão 10- Escreva um programa para calcular a redução do tempo de vida de um fumante. Pergunte a quantidade de cigarros fumados por dia e quantos anos ele já fumou. Considere que um fumante perde 10 minutos de vida a cada cigarro, calcule quantos dias de vida um fumante perderá. Exiba o total de dias.
+
+tempo = int(input("digite quantos tempo fumar:"))
+cigarro = int(input("digite quantos cigarro fumar por dia:"))
+ano = 525600
+dia = 1440
+print ((((ano/(cigarro*10))*tempo)/1440) , "dias aproximadamente perdidos")
+
+#Questão 11- Sabendo que str( ) converte valores numéricos para string, calcule quantos dígitos há em 2 elevado a um milhão.
+
+mi = str(2**1000000)
+len(mi)

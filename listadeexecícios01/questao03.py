@@ -1,0 +1,5 @@
+dias = int(input("digite o número de dias:"))
+horas= int(input("digite o número de horas:"))
+minutos = int(input("digite o número de minutos:"))
+segundos = int(input("digite o número de segundos:"))
+print(((((((dias*24)+horas)*60)+minutos)*60)+ segundos), "segundos")

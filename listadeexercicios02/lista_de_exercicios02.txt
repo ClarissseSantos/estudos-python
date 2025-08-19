@@ -1,0 +1,99 @@
+1. Faça um Programa que peça os três lados de um triângulo. O programa deverá informar se os valores podem ser um triângulo. Indique, caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno. 
+
+l1 = int(input("Lado 1: "))
+l2 = int(input("Lado 2: "))
+l3 = int(input("Lado 3: "))
+if l1 >(l2+l3) or 12 > (11+13) or 13 >(11+12):
+     print ("Não pode ser um triangulo")
+elif l1 == l2 == l3:
+     print ("é um equilátero")
+elif l1 == l2 or l1 == l3 or 12 == 13:
+     print ("é um isósceles")
+else:
+    print ("é um escaleno")
+
+2. Determine se um ano é bissexto. Verifique no Google como fazer isso... 
+
+ano = str(input("digite um ano:"))
+if int(ano)% 4 == 0 and ano[2:]!="00":
+    print("é um ano bissexto")
+else:
+    print ("não é um ano bissexto")
+
+3. João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu trabalho. Toda vez que ele traz um peso de peixes maior que o estabelecido pelo regulamento de pesca do estado de São Paulo (50 quilos) deve pagar uma multa de R$ 4,00 por quilo excedente. João precisa que você faça um programa que leia a variável peso (peso de peixes) e verifique se há excesso. Se houver, gravar na variável excesso e na variável multa o valor da multa que João deverá pagar. Caso contrário mostrar tais variáveis com o conteúdo ZERO. 
+
+peso = int(input("digite com o peso:"))
+if peso > 50:
+    excesso = peso - 50
+    multa = excesso * 4
+else:
+    excesso = "Zero"
+    multa = "Zero"
+print ('O excesso de peso foi de',str(excesso),'kg,portanto,multa é de R$', str(multa))
+
+4. Faça um Programa que leia três números e mostre o maior deles. 
+
+n1= int(input("digite o primeiro número:"))
+n2= int(input("digite o segundo número:"))
+n3= int(input("digite o terceiro número:"))
+if n1 > n2 and n1 > n3:
+    maior = n1
+if n2 > n1 and n2 > n3:
+    maior = n2
+if n3 > n1 and n3 > n2:
+    maior = n3
+print('O maior valor é o',(maior))
+
+5. Faça um Programa que leia três números e mostre o maior e o menor deles.
+
+n1= int(input("digite o primeiro número:"))
+n2= int(input("digite o segundo número:"))
+n3= int(input("digite o terceiro número:"))
+if n1 > n2 and n1 > n3:
+    maior = n1
+if n2 > n1 and n2 > n3:
+    maior = n2
+if n3 > n1 and n3 > n2:
+    maior = n3
+print('O maior valor é o',(maior))
+if n1 < n2 and n1 < n3:
+   menor = n1
+if n2 < n1 and n2 < n3:
+   menor = n2
+if n3 < n1 and n3 < n2:
+    menor = n3
+print('O menor valor é o',(menor))
+
+6. Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês, sabendo-se que são descontados 11% para o Imposto de Renda, 8% para o INSS e 5% para o sindicato, faça um programa que nos dê o salário bruto, quanto pagou ao INSS, quanto pagou ao sindicato e o salário líquido. Observe que Salário Bruto - Descontos = Salário Líquido. Calcule os descontos e o salário líquido, conforme a tabela abaixo:
+ a. + Salário Bruto : R$ 
+b. - IR (11%) : R$ 
+c. - INSS (8%) : R$ 
+d. - Sindicato ( 5%) : R$ 
+e. = Salário Liquido : R$ 
+
+qnt_ganha = int(input("Quanto ganha por hora?"))
+horas_trabalhadas = int(input('horas trabalhadas por mes:'))
+salário_bruto = qnt_ganha * horas_trabalhadas
+ir = salário_bruto * 0.11
+inss = salário_bruto * 0.08
+sindicato = salário_bruto * 0.05
+print(f'+ Salário Bruto: R$ %.2f' %salário_bruto)
+print(f'- IR: R$ %.2f' %ir)
+print(f'- INSS: R$ %.2f' %inss)
+print(f'-Sindicato: R$ %.2f' %sindicato)
+print(f'= Salário Liquido: R$ %.2f' %(salário_bruto - ir - inss - sindicato))
+
+7. Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00. Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total. Obs. : somente são vendidos um número inteiro de latas.
+
+tamanho = int(input("Tamanho em metros quadrados:"))
+litro = tamanho / 3
+if tamanho %54 == 0:
+    latas = tamanho / 54
+else:
+    latas = int(tamanho / 54)+1
+preço = latas*80
+print(f' terá que comprar %d latas'%latas)
+print(f' custará R$ %.2f' %preço)
+
+
+
